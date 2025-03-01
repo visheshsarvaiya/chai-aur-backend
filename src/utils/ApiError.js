@@ -3,7 +3,7 @@ class ApiError extends Error{  //api error ke liye
         statusCode,
         message= " Something went wrong ",  // error pata chal jati hai
         error=[],
-        statck=""
+        stack=""
     ) {   //override kar rahe hai
 
       super(message)
