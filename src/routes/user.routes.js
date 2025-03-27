@@ -39,7 +39,7 @@ router.route("/logout").post(verifyJWT, logoutUser);
 //refresh  token end point 
 
 router.route("/refresh-token").post(refreshAccessToken);
-export default router;
+
 
 router.route("/change-password").post(verifyJWT, changeCurrentPassword)
 router.route("/current-user").get(verifyJWT, getCurrentUser)
@@ -51,4 +51,4 @@ router.route("/cover-image").patch(verifyJWT, upload.single("coverImage"), updat
 router.route("/c/:username").get(verifyJWT, getUserChannelProfile)
 router.route("/history").get(verifyJWT, getWatchHistory)
 
-export default router
+export default router;
